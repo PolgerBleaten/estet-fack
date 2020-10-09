@@ -1,0 +1,6 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 666;
+  background-color: rgba(0, 217, 255, 0.336);
+}
