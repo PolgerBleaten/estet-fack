@@ -1,6 +1,254 @@
+@font-face {
+  font-family: "Harlow";
+  src: url("./HARLOWSI.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(204, 232, 204);
+  margin: 0px;
+}
+.button {
+  background-image: url("knapp.png");
+  background-size: cover;
+  width: 18.46vw;
+  height: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button a {
+  text-decoration: none;
+}
 header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 666;
-  background-color: rgba(0, 217, 255, 0.336);
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.336);
+  height: 20vh;
+}
+header img {
+  width: 150px;
+}
+
+.introduction {
+  height: 100%;
+  width: 100%;
+  background-image: url("donken.jpg");
+  background-size: cover;
+  overflow: hidden;
+  animation: 3s ease-in-out forwards 4s compress;
+}
+.maincontent {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(204, 232, 204);
+}
+.frame {
+  margin: 2.5vw;
+  background-image: url("Painter.jpg");
+  background-size: cover;
+}
+.desc {
+  display: flex;
+  background-color: rgb(226, 182, 207);
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vw;
+  font-family: "Harlow";
+  flex-direction: column;
+}
+.desc h4 {
+  font-size: 2vw;
+}
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+.introductioninner {
+  display: grid;
+  grid-template-rows: 200fr 60fr 100fr 500fr;
+  grid-template-columns: 40fr 500fr 500fr;
+  background-color: rgba(226, 182, 207, 0.5);
+  background-image: url("overlay.png");
+  background-position: left;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  animation: slidein 3s ease-in-out forwards 1s;
+}
+.menu a {
+  margin: 1.25vw;
+  font-family: "Harlow";
+  text-decoration: none;
+  color: black;
+  font-size: 3vw;
+}
+.introduction h1 {
+  font-family: "Harlow";
+  color: rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 1);
+  font-size: 3.5vw;
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+.introduction h2 {
+  font-family: "Harlow";
+  font-size: 2.5vw;
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+.frame2 {
+  margin: 2.5vw;
+  background-image: url("Money.jpg");
+  background-size: cover;
+}
+.frame3 {
+  margin: 2.5vw;
+  background-image: url("Reading.jpg");
+  background-size: cover;
+}
+.frame4 {
+  margin: 2.5vw;
+  background-image: url("Confused.png");
+  background-size: cover;
+}
+.line {
+  background-color: rgb(0, 0, 0);
+  height: 2px;
+  width: 100%;
+}
+.news {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 70px 3.5vw 8vw 1fr 200px;
+  margin-left: 10px;
+}
+.news h2 {
+  text-decoration: underline;
+  font-size: 3vw;
+  grid-row: 2/2;
+}
+.news img {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  width: 100%;
+}
+.news p {
+  margin-top: 20px;
+  grid-column-start: 1;
+  grid-row-start: 5;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+.news div {
+  display: flex;
+  justify-content: center;
+}
+.news h1 {
+  font-family: "Harlow";
+  font-size: 60px;
+}
+.extra {
+  background-color: black;
+  color: white;
+  font-family: "Harlow";
+  grid-column: 1/1;
+  grid-row: 3/3;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.extra h1 {
+  font-size: 6.3vw;
+}
+.extra h1:first-child {
+  color: red;
+}
+.member {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-image: url("suprise.jpg");
+  background-size: cover;
+}
+.member div:first-child {
+  border-right: 2px solid black;
+  font-family: "Harlow";
+  background-color: rgb(227, 101, 193);
+}
+.member h2 {
+  font-size: 3.5vw;
+  margin-bottom: 8px;
+}
+.member div:first-child li {
+  font-size: 30px;
+}
+.member li {
+  list-style: disc inside;
+  margin-top: 40px;
+  margin-left: 10px;
+  font-size: 3vw;
+}
+.member div:last-child {
+  font-family: "Harlow";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.member form {
+  display: flex;
+  flex-direction: column;
+}
+.member input {
+  margin: 2vw;
+  width: 10vw;
+  height: 30px;
+  border: 1px solid black;
+  padding: 8px;
+  display: inline-block;
+}
+.member label {
+  margin-left: 2vw;
+  font-size: 2vw;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 100%;
+    width: 300%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    height: 50vh;
+  }
+  .introduction {
+    height: 50vh;
+  }
+  .introductioninner {
+    height: 50vh;
+  }
+  .maincontent {
+    height: 50vh;
+  }
+  header img {
+    width: 20vw;
+  }
 }
