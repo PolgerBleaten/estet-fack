@@ -22,6 +22,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .button a {
   text-decoration: none;
 }
@@ -185,10 +186,14 @@ header img {
   background-image: url("suprise.jpg");
   background-size: cover;
 }
+
 .member div:first-child {
-  border-right: 2px solid black;
   font-family: "Harlow";
   background-color: rgb(227, 101, 193);
+  padding-left: 1vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .member h2 {
   font-size: 3.5vw;
@@ -199,15 +204,16 @@ header img {
 }
 .member li {
   list-style: disc inside;
-  margin-top: 40px;
-  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 3vw;
 }
-.member div:last-child {
+.register {
   font-family: "Harlow";
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-left: 2px solid black;
 }
 .member form {
   display: flex;
@@ -224,6 +230,102 @@ header img {
 .member label {
   margin-left: 2vw;
   font-size: 2vw;
+}
+.button2 {
+  background-image: url("knapp2.png");
+  background-size: cover;
+  width: 18.46vw;
+  height: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  display: grid;
+  grid-template-columns: 15vw 1fr 40vw;
+  grid-template-rows: 10vw 10vw 40vw;
+  background-color: rgb(226, 182, 207);
+}
+.about h1 {
+  font-size: 5vw;
+  font-family: "Harlow";
+  grid-column: 2/2;
+}
+.about h2 {
+  font-family: "Harlow";
+  font-size: 3vw;
+  grid-column: 2/2;
+}
+.about ul {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2vw;
+  grid-column: 2/2;
+}
+.about li {
+  margin-top: 10px;
+}
+input {
+  background-color: rgb(204, 232, 204);
+}
+.submit {
+  background-color: rgb(227, 101, 193);
+  border: none;
+  color: black;
+  font-family: "Harlow";
+  padding: 16px 32px;
+}
+.benefits {
+  display: grid;
+  grid-template-columns: 70vw 1fr;
+  grid-template-rows: 43vw 1fr;
+  width: 98vw;
+  background-image: url("benefitbackground.png");
+  background-size: cover;
+}
+.benefits ul {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  font-family: "Harlow";
+  font-size: 3vw;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ul p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5vw;
+  margin-top: 10px;
+}
+.FAQ {
+  height: 105vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.questions {
+  border-top: solid black;
+  border-bottom: solid black;
+  border-left: solid black 1vw;
+  margin-left: 5vw;
+  padding-top: 4vh;
+  padding-left: 2vw;
+  display: grid;
+  grid-template-columns: 15vw 1fr;
+}
+.answers {
+  border-top: solid black;
+  border-bottom: solid black;
+  border-left: solid red 1vw;
+  padding-top: 4vh;
+  padding-left: 2vw;
+  display: grid;
+  grid-template-columns: 15vw 1fr;
+}
+.FAQ h2 {
+  font-family: "Harlow";
+}
+.FAQ p {
+  font-family: "Times New Roman", Times, serif;
 }
 
 @keyframes slidein {
