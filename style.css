@@ -135,7 +135,7 @@ nav a {
   width: 100%;
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: 70px 3.5vw 8vw 1fr 200px;
+  grid-template-rows: 8vw 45px 8vw 1fr 200px;
   margin-left: 10px;
 }
 .news h2 {
@@ -161,7 +161,7 @@ nav a {
 }
 .news h1 {
   font-family: "Harlow";
-  font-size: 60px;
+  font-size: 6vw;
 }
 .extra {
   background-color: black;
@@ -383,9 +383,6 @@ footer img {
   header img {
     width: 20vw;
   }
-  footer {
-    bottom: 0%;
-  }
   .member input {
     width: 30vw;
   }
@@ -408,5 +405,34 @@ footer img {
     font-family: "Harlow";
     font-size: 20px;
     justify-self: top;
+  }
+  footer {
+    bottom: 0%;
+  }
+  .news h2 {
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2,
+  .news h2 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 13.5px;
+  }
+  ul,
+  ul p,
+  p,
+  .news p {
+    font-size: 12px;
+  }
+  a,
+  nav a,
+  ul li {
+    font-size: 13px;
   }
 }
