@@ -74,7 +74,7 @@ header img {
 .desc h4 {
   font-size: 2vw;
 }
-.menu {
+nav {
   display: flex;
   justify-content: space-evenly;
 }
@@ -90,7 +90,7 @@ header img {
   width: 100vw;
   animation: slidein 3s ease-in-out forwards 1s;
 }
-.menu a {
+nav a {
   margin: 1.25vw;
   font-family: "Harlow";
   text-decoration: none;
