@@ -199,9 +199,6 @@ nav a {
   font-size: 3.5vw;
   margin-bottom: 8px;
 }
-.member div:first-child li {
-  font-size: 30px;
-}
 .member li {
   list-style: disc inside;
   margin-top: 20px;
@@ -382,5 +379,17 @@ footer img {
   }
   header img {
     width: 20vw;
+  }
+  footer {
+    bottom: 0%;
+  }
+  .member input {
+    width: 30vw;
+  }
+  .member label {
+    font-size: 16px;
+  }
+  .news p {
+    font-size: 3vw;
   }
 }
