@@ -384,8 +384,8 @@ footer h4 {
   }
 }
 @media screen and (max-width: 600px) {
-  main {
-    height: 50vh;
+  .about {
+    grid-template-rows: 10vw 10vw 800vw;
   }
   .introduction {
     height: 50vh;
