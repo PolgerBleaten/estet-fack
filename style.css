@@ -274,10 +274,13 @@ input {
 .benefits {
   display: grid;
   grid-template-columns: 70vw 1fr;
-  grid-template-rows: 43vw 1fr;
+  grid-template-rows: 45vw 1fr;
   width: 98vw;
   background-image: url("benefitbackground.png");
   background-size: cover;
+}
+.benefits h1 {
+  display: none;
 }
 .benefits ul {
   grid-column: 2/2;
@@ -312,7 +315,7 @@ ul p {
 .answers {
   border-top: solid black;
   border-bottom: solid black;
-  border-left: solid red 1vw;
+  border-left: solid rgb(227, 101, 193) 1vw;
   padding-top: 4vh;
   padding-left: 2vw;
   display: grid;
@@ -391,5 +394,19 @@ footer img {
   }
   .news p {
     font-size: 3vw;
+  }
+  .benefits {
+    background-color: rgb(226, 182, 207);
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .benefits h1 {
+    display: block;
+    font-family: "Harlow";
+    font-size: 20px;
+    justify-self: top;
   }
 }
